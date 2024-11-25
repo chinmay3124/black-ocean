@@ -1,0 +1,16 @@
+backend:
+  name: github
+  repo: chinmay3124/black-ocean # Replace with your repo name
+  branch: main # Replace with your branch name if different
+
+media_folder: static/img # Where uploaded images will be stored
+public_folder: /img      # URL path for the images
+
+collections:
+  - name: "pages"        # Identifier for the collection
+    label: "Pages"       # Label in the CMS
+    folder: "content/pages" # Folder where content files are stored
+    create: true         # Allow creating new files
+    fields:              # Fields for editing content
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Body", name: "body", widget: "markdown" }
